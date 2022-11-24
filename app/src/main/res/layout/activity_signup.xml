@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="354dp"
+                    android:layout_height="283dp"
+                    app:srcCompat="@drawable/top_arc2"
+                    tools:layout_editor_absoluteX="58dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Ceate \nAccount"
+                    android:textColor="#ffffff"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/editTextNameSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:drawableStart="@drawable/name"
+                android:padding="6dp"
+                android:drawablePadding="14dp"
+                android:textColorHint="#ffffff"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:hint="Name" />
+
+            <EditText
+                android:id="@+id/editTextEmailSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="14dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="6dp"
+                android:textColorHint="#ffffff" />
+
+            <EditText
+                android:id="@+id/editTextPasswordSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:drawableStart="@drawable/password"
+                android:padding="6dp"
+                android:drawablePadding="14dp"
+                android:textColorHint="#ffffff"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+            <ImageView
+                android:id="@+id/image_btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/btn_login" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
